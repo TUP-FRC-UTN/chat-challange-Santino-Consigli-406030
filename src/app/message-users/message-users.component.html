@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="col-md-6">
+        <h3>Usuario: Pepe</h3>
+        <textarea class="form-control mb-3" rows="3" [(ngModel)]="textMessagePepe"></textarea>
+        <button class="btn btn-primary mb-3"  (click)="onClickSendMessage('Pepe', textMessagePepe)">Guardar</button>
+    </div>
+    <div class="col-md-6">
+        <h3>Usuario: María</h3>
+        <textarea class="form-control mb-3" rows="3" [(ngModel)]="textMessageMaria"></textarea>
+        <button class="btn btn-primary mb-3"  (click)="onClickSendMessage('Maria', textMessageMaria)">Guardar</button>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sala de Chat</title>
+    
+</head>
+<body>
+    <div class="container border border-light-subtle rounded">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2>Sala de Chat</h2>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1 class="align-self-start">Conversacion</h1>
+
+            <div class="container border rounded">
+                @for (message of messages; track message; ) {
+                    <p>{{ message.usuario }}: {{ message.text }}</p>
+                }
+            </div>
+          </div>
+        </div>
+            <app-message-users (mensajeEmit)="onMensajeEmitCargarChat($event)"></app-message-users>
+    </div>
+</body>
+</html>   
+
